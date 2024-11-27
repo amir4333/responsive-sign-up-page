@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            background-color: aqua;
+        }
+
+        .god{
+            display: flex;
+
+            width: 100%;
+            padding-top: 150px;
+            
+            justify-content: center;
+        }
+
+        .title{
+            text-align: right;
+
+            font-size: 1.25em;
+
+            color: white;
+        }
+
+        .parent{
+            width: fit-content;
+
+            padding: 30px 80px 60px 80px;            
+            border-radius: 20px;
+
+            background-color: rgb(150, 150, 150, 0.5);
+
+        }
+
+        .form{
+            display: flex;
+
+            gap: 60px;
+        }
+
+        .inputs{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+
+            border-radius: 30px;
+            gap: 10px;
+
+            font-size: 1.2em;
+        }
+
+        .inputs>div{
+            display: flex;
+            flex-direction: row-reverse;
+
+            gap: 20px;
+        }
+
+        .inputradius{
+            width: fit-content;
+            height: fit-content;
+            border-radius: 20px;
+            padding: 5px;
+
+            background-color: rgba(231, 231, 231, 0.5);
+        }
+
+        input{
+            border: none;
+
+            background-color: rgba(0, 255, 255, 0);
+
+            color: white;
+        }
+
+        .labels{
+            width: 100%;
+
+            text-align: right;
+        }
+
+        .img{
+            width: 200px;
+            height: 200px;
+
+            border: 2px solid rgb(190, 190, 190);
+            border-radius: 50%;
+
+            background-color: rgba(231, 231, 231, 0.5);
+        }
+
+        .footer{
+            display: flex;
+            
+            margin-top: 100px;
+
+            gap: 100px;
+        }
+
+        .botton{
+            width: 150px;
+            border-radius: 20px;
+            padding: 10px 5px;
+
+            background-color: aqua;
+
+            text-align: center;
+            font-weight: 900;
+        }
+
+        .botton:hover{
+            background-color: rgba(0, 255, 255, 0.7);
+        }
+
+        @media only screen and (max-width: 768px) {
+
+            .god{
+                padding-top: 50px;
+            }
+
+            .form{
+                flex-direction: column-reverse;
+            }
+
+            .img{
+                margin: auto;
+            }
+
+        }
+
+        @media only screen and (max-width: 375px) {
+
+            .god{
+                padding-top: 0px;
+            }
+
+            .parent{
+                padding: 0px 10px 40px 10px;
+            }
+
+            .form{
+                flex-direction: column-reverse;
+            }
+
+            .img{
+            margin: auto;
+            }
+
+            .footer{
+                gap: 10px;
+                margin-top: 40px;
+            }
+
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="god">
+
+        <div class="parent">
+
+            <div class="title"><h1>پروفایل کاربری</h1></div>
+
+            <div class="form">
+    
+                <div class="containers">
+
+                    <div class="inputs">
+
+                        <div>
+                            <div class="labels"><label for="fname"><b>:نام</b></label></div>
+                            <div class="inputradius"><input type="text" name="fname" id="fname" placeholder="Enter your first name"></div>
+                        </div>
+
+
+                        <div>
+                            <div class="labels"><label for="lname"><b>:نام خانوادگی</b></label></div>
+                            <div class="inputradius"><input type="text" name="lname" id="lname" placeholder="Enter your last name"></div>
+                        </div>
+
+            
+                        <div>
+                            <div class="labels"><label for="email"><b>:ایمیل</b></label></div>
+                            <div class="inputradius"><input type="text" name="email" id="email" placeholder="Enter your email"></div>
+                        </div>
+
+            
+                        <div>
+                            <div class="labels"><label for="phone"><b>:شماره تلفن</b></label></div>
+                            <div class="inputradius"><input type="text" name="phone" id="phone" placeholder="Enter your phone number"></div>
+                        </div>
+
+                    </div>
+        
+                    <div class="footer">
+
+                        <div class="botton">password change</div>
+
+                        <div class="botton">change</div>
+
+                    </div>
+    
+                </div>
+
+                <div class="img"></div>
+
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+</body>
+</html>
